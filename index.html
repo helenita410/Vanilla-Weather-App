@@ -4,7 +4,85 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="src/styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/121bd39351.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Vanilla Weather App</title>
   </head>
-  <body></body>
+  <body>
+    <div class="container border rounded p4" id="search-form">
+      <form>
+        <div class="col-sm-7">
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Type your city"
+            id="city-input"
+            aria-label="City"
+          />
+        </div>
+        <br />
+        <button type="submit" class="btn btn-primary">Search</button>
+        <button type="submit" class="btn btn-primary" id="current-loc-button">
+          Current location
+        </button>
+      </form>
+      <i class="fa-solid fa-cloud-rain rainy-icon"></i>
+      <h1 id="place"></h1>
+      <h2 id="description"></h2>
+      <span class="current" id="current"></span>
+      <span class="units">°C</span>
+      <p>Last updated: Sunday 23rd October 20.30</p>
+
+      <ul>
+        <li>Humidity:<span id="humidity"></span>%</li>
+        <li>Precipitation:<span id="precipitation"></span>%</li>
+        <li>Wind:<span id="wind"></span>mph</li>
+      </ul>
+      <div class="weather">
+        <div class="border border-primary">
+          <div class="row">
+            <div class="col-2 day">Monday</div>
+            <div class="col-2 day">Tuesday</div>
+            <div class="col-2 day">Wednesday</div>
+            <div class="col-2 day">Thursday</div>
+            <div class="col-2 day">Friday</div>
+            <div class="col-2 day">Saturday</div>
+            <div class="col-2">
+              <i class="fa-solid fa-cloud-rain"></i>
+            </div>
+            <div class="col-2">
+              <i class="fa-solid fa-cloud-sun sun-icon"></i>
+            </div>
+            <div class="col-2">
+              <i class="fa-solid fa-cloud cloud-icon"></i>
+            </div>
+            <div class="col-2"><i class="fa-solid fa-cloud-rain"></i></div>
+            <div class="col-2"><i class="fa-solid fa-cloud-rain"></i></div>
+            <div class="col-2"><i class="fa-solid fa-cloud-rain"></i></div>
+
+            <div class="col-2 temp">16°C/11°C</div>
+            <div class="col-2 temp">17°C/13°C</div>
+            <div class="col-2 temp">18°C/14°C</div>
+            <div class="col-2 temp">20°C/14°C</div>
+            <div class="col-2 temp">18°C/12°C</div>
+            <div class="col-2 temp">18°C/13°C</div>
+          </div>
+        </div>
+      </div>
+
+      <footer><p class="coder">Coded by Helen Scott</p></footer>
+    </div>
+    <script src="index.js"></script>
+  </body>
 </html>
