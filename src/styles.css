@@ -19,7 +19,8 @@ p {
 }
 ul {
   list-style: none;
-  font-size: 25px;
+  font-size: 21px;
+  font-weight: bolder;
   color: #3e4a61;
 }
 footer {
