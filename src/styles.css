@@ -1,7 +1,5 @@
 body {
   font-family: "Lato" sans-serif;
-  max-width: 800px;
-  display: block;
 }
 h1,
 h2 {
@@ -36,6 +34,7 @@ footer {
   font-weight: bolder;
 }
 .container {
+  max-width: 600px;
   padding: 40px;
   margin: 60px;
   background: linear-gradient(
