@@ -34,6 +34,7 @@ footer {
   font-weight: bolder;
 }
 .container {
+  display: block;
   padding: 30px;
   margin: 40px;
   background: linear-gradient(
