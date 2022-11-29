@@ -34,9 +34,9 @@ footer {
   font-weight: bolder;
 }
 .container {
-  max-width: 600px;
+  max-width: 900px;
   padding: 40px;
-  margin: 60px;
+  margin: 60px auto;
   background: linear-gradient(
     93.1deg,
     rgb(238, 254, 183) 19.1%,
