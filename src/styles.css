@@ -50,6 +50,10 @@ footer {
 .day {
   color: #2772db;
 }
+.description {
+  color: #2772db;
+  font-weight: bolder;
+}
 .temp {
   color: #3e4a61;
 }
@@ -60,6 +64,10 @@ footer {
 
   margin: 0 auto;
   float: right;
+}
+.place {
+  color: #2772db;
+  font-weight: bolder;
 }
 .weather {
   padding: 30px;
