@@ -73,3 +73,5 @@ searchForm.addEventListener("submit", handleSubmit);
 
 let currentLocationButton = document.querySelector("#current-loc-button");
 currentLocationButton.addEventListener("click", getCurrentLoc);
+
+let fahrenheitLink = document.querySelector("#fahrenheit-link");
