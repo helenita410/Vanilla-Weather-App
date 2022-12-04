@@ -39,7 +39,7 @@ let month = months[now.getMonth()];
 p.innerHTML = `Last updated ${day} ${date} ${month} ${year} ${hours}:${minutes}`;
 
 function displayWeather(response) {
-  celsiusTemperature = response.data.main.temp;
+  let celsiusTemperature = response.data.main.temp;
   document.querySelector("#place").innerHTML = response.data.name;
   document.querySelector("#current").innerHTML = Math.round(
     response.data.main.temp
