@@ -49,12 +49,7 @@ footer {
   max-width: 900px;
   padding: 40px;
   margin: 60px auto;
-  background: linear-gradient(
-    93.1deg,
-    rgb(238, 254, 183) 19.1%,
-    rgb(169, 254, 222) 53.9%,
-    rgb(90, 222, 255) 92%
-  );
+  background: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
 }
 .col-2 {
   font-weight: bolder;
