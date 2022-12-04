@@ -84,3 +84,10 @@ footer {
 .coder {
   font-size: 15px;
 }
+.units.active {
+  color: #2772db;
+  cursor: default;
+}
+.units.active:hover {
+  text-decoration: none;
+}
