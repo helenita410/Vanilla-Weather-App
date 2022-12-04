@@ -39,6 +39,7 @@ let month = months[now.getMonth()];
 p.innerHTML = `Last updated ${day} ${date} ${month} ${year} ${hours}:${minutes}`;
 
 function displayWeather(response) {
+  console.log(response.data);
   let cityElement = document.querySelector("#place");
   let temperatureElement = document.querySelector("#current");
   let descriptionElement = document.querySelector("#description");
