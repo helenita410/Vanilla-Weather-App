@@ -33,6 +33,7 @@ footer {
   color: #2772db;
   font-weight: bolder;
   cursor: default;
+  text-decoration: none;
 }
 
 .units .active:hover {
