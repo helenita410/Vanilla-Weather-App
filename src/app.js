@@ -43,6 +43,7 @@ function displayWeather(response) {
   document.querySelector("#current").innerHTML = Math.round(
     response.data.main.temp
   );
+  celsiusTemperature = response.data.main.temp;
   document.querySelector("#humidity").innerHTML = response.data.main.humidity;
   document.querySelector("#wind").innerHTML = response.data.wind.speed;
   document.querySelector("#description").innerHTML =
@@ -71,7 +72,7 @@ function getCurrentLoc(event) {
 
 function displayFahrenheitTemperature(event) {
   event.preventDefault();
-  let fahrenheitTemperature = (0 * 9) / 5 + 32;
+  let fahrenheitTemperature = (celsiusTemperature * 9) / 5 + 32;
   let temperatureElement = document.querySelector("#current");
   temperatureElement.innerHTML = Math.round(fahrenheitTemperature);
 }
