@@ -27,7 +27,7 @@ ul {
 }
 footer {
   text-align: center;
-  font-weight: lighter;
+  font-weight: bolder;
 }
 .units .active {
   color: #2772db;
