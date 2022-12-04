@@ -75,8 +75,8 @@ function getCurrentLoc(event) {
 
 function displayFahrenheitTemperature(event) {
   event.preventDefault();
+  let temperatureElement = document.querySelector("#temperature");
   let fahrenheitTemperature = (celsiusTemperature * 9) / 5 + 32;
-  let temperatureElement = document.querySelector("#current");
   temperatureElement.innerHTML = Math.round(fahrenheitTemperature);
 }
 
