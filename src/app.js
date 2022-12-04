@@ -39,12 +39,12 @@ let month = months[now.getMonth()];
 p.innerHTML = `Last updated ${day} ${date} ${month} ${year} ${hours}:${minutes}`;
 
 function displayWeather(response) {
-  console.log(response.data);
   let cityElement = document.querySelector("#place");
   let temperatureElement = document.querySelector("#current");
   let descriptionElement = document.querySelector("#description");
   let humidityElement = document.querySelector("#humidity");
   let windElement = document.querySelector("#wind");
+  let iconElement = document.querySelector("#icon");
   celsiusTemperature = response.data.main.temp;
 
   temperatureElement.innerHTML = Math.round(celsiusTemperature);
@@ -52,6 +52,10 @@ function displayWeather(response) {
   descriptionElement.innerHTML = response.data.weather[0].main;
   humidityElement.innerHTML = response.data.main.humidity;
   windElement.innerHTML = response.data.main.wind.speed;
+  iconElement.setAttribute(
+    "src",
+    `http://openweathermap.org/img/wn/10d@2x.png`
+  );
 }
 
 function searchCity(city) {
