@@ -58,6 +58,7 @@ footer {
 .day {
   color: #2772db;
   text-align: center;
+  opacity: 0.6;
 }
 
 .temp {
