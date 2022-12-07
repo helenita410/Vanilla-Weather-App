@@ -57,10 +57,12 @@ footer {
 }
 .day {
   color: #2772db;
+  text-align: center;
 }
 
 .temp {
   color: #3e4a61;
+  text-align: center;
 }
 .image {
   text-align: center;
