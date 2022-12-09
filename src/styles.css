@@ -61,12 +61,12 @@ footer {
   opacity: 0.6;
 }
 .weather-forecast-temperature-max {
-  color: #0000;
+  color: #2772db;
   text-align: center;
   font-size: 13px;
 }
 .weather-forecast-temperature-min {
-  color: #0000;
+  color: #2772db;
   text-align: center;
   font-size: 13px;
   opacity: 0.6;
