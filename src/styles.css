@@ -60,13 +60,13 @@ footer {
   text-align: center;
   opacity: 0.6;
 }
-.weather-forecast-temperature-max {
-  color: #2772db;
+.weather-forecast-max {
+  color: #0000;
   text-align: center;
   font-size: 13px;
 }
-.weather-forecast-temperature-min {
-  color: #2772db;
+.weather-forecast-min {
+  color: #0000;
   text-align: center;
   font-size: 13px;
   opacity: 0.6;
