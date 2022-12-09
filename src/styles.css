@@ -55,23 +55,28 @@ footer {
 .col-2 {
   font-weight: bolder;
 }
-.day {
+.weather-forecast-date {
   color: #2772db;
   text-align: center;
   opacity: 0.6;
 }
-
-.temp {
-  color: #3e4a61;
+.weather-forecast-temperature-max {
+  color: #0000;
   text-align: center;
   font-size: 13px;
 }
-
+.weather.forecast-temperature-min {
+  color: #0000;
+  text-align: center;
+  font-size: 13px;
+  opacity: 0.6;
+}
 .image {
   text-align: center;
 }
-.weather {
+.weather-forecast {
   padding: 30px 0;
+  text-align: center;
 }
 .cloud-icon {
   color: #ffff;
