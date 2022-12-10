@@ -38,6 +38,11 @@ let months = [
 let month = months[now.getMonth()];
 p.innerHTML = `Last updated ${day} ${date} ${month} ${year} ${hours}:${minutes}`;
 
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+  forecastElement.innerHTML = "Forecast";
+}
+
 function displayWeather(response) {
   let cityElement = document.querySelector("#place");
   let temperatureElement = document.querySelector("#current");
@@ -97,6 +102,8 @@ function displayCelsiusTemperature(event) {
 }
 
 let celsiusTemperature = null;
+
+displayForecast();
 
 let searchForm = document.querySelector("#search-form");
 searchForm.addEventListener("submit", handleSubmit);
