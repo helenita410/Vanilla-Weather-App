@@ -41,7 +41,26 @@ p.innerHTML = `Last updated ${day} ${date} ${month} ${year} ${hours}:${minutes}`
 function displayForecast() {
   let forecastElement = document.querySelector("#forecast");
   let forecastHTML = "";
-  forecastHTML = `<div class ="row"> 
+  forecastHTML =
+    forecastHTML +
+    `<div class ="row"> 
+  <div class="col-2">
+              <div class="weather-forecast-date">Monday</div>
+
+              <img
+                src="https://openweathermap.org/img/wn/50d@2x.png"
+                alt=""
+                width="42"
+              />
+
+              <div class="weather-forecast-temperature"></div>
+              <span class="weather-forecast-max">18°</span>
+              <span class="weather-forecast-min">12°</span>
+            </div>
+          </div>`;
+  forecastHTML =
+    forecastHTML +
+    `<div class ="row"> 
   <div class="col-2">
               <div class="weather-forecast-date">Monday</div>
 
