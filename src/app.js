@@ -37,6 +37,48 @@ let months = [
 ];
 let month = months[now.getMonth()];
 p.innerHTML = `Last updated ${day} ${date} ${month} ${year} ${hours}:${minutes}`;
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+  let forecastHTML = `<div class="row w-100">`;
+  forecastHTML =
+    forecastHTML +
+    `<div class="border border-primary">
+            <div class="col-2">
+              <div class="weather-forecast-date">Monday</div>
+
+              <img
+                src="https://openweathermap.org/img/wn/50d@2x.png"
+                alt=""
+                width="42"
+              />
+
+              <div class="weather-forecast-temperature"></div>
+              <span class="weather-forecast-max">18°</span>
+              <span class="weather-forecast-min">12°</span>
+            </div>
+          </div>
+        </div>`;
+  forecastHTML =
+    forecastHTML +
+    `<div class="border border-primary">
+            <div class="col-2">
+              <div class="weather-forecast-date">Monday</div>
+
+              <img
+                src="https://openweathermap.org/img/wn/50d@2x.png"
+                alt=""
+                width="42"
+              />
+
+              <div class="weather-forecast-temperature"></div>
+              <span class="weather-forecast-max">18°</span>
+              <span class="weather-forecast-min">12°</span>
+            </div>
+          </div>
+        </div>`;
+  forecastHTML = `</div>`;
+  forecastElement.innerHTML = forecastHTML;
+}
 
 function displayWeather(response) {
   let cityElement = document.querySelector("#place");
@@ -97,6 +139,8 @@ function displayCelsiusTemperature(event) {
 }
 
 let celsiusTemperature = null;
+
+displayForecast();
 
 let searchForm = document.querySelector("#search-form");
 searchForm.addEventListener("submit", handleSubmit);
