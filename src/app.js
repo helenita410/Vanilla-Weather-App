@@ -65,6 +65,10 @@ function displayForecast() {
   forecastElement.innerHTML = forecastHTML;
 }
 
+function getForecast(coordinates) {
+  console.log(coordinates);
+}
+
 function displayWeather(response) {
   let cityElement = document.querySelector("#place");
   let temperatureElement = document.querySelector("#current");
@@ -84,6 +88,8 @@ function displayWeather(response) {
     `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
   );
   iconElement.setAttribute("alt", response.data.weather[0].main);
+
+  getForecast(response.data.coord);
 }
 
 function searchCity(city) {
