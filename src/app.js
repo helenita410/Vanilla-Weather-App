@@ -40,7 +40,7 @@ p.innerHTML = `Last updated ${day} ${date} ${month} ${year} ${hours}:${minutes}`
 
 function displayForecast() {
   let forecastElement = document.querySelector("#forecast");
-  let forecastHTML = `<div class ="row">`;
+  let forecastHTML = `<div class ="row w-100">`;
   forecastHTML =
     forecastHTML +
     `<div class="col-2">
