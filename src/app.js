@@ -38,7 +38,7 @@ let months = [
 let month = months[now.getMonth()];
 p.innerHTML = `Last updated ${day} ${date} ${month} ${year} ${hours}:${minutes}`;
 
-function displayForecast() {
+function displayForecast(response) {
   let forecastElement = document.querySelector("#forecast");
   let forecastHTML = `<div class ="row w-100">`;
   let days = ["Mon", "Tues", "Wed", "Thurs"];
@@ -66,7 +66,9 @@ function displayForecast() {
 }
 
 function getForecast(coordinates) {
-  console.log(coordinates);
+  let apiKey = "7746bdeabca928cfedcad71e52fd9d66";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&units=metric`;
+  axios.get(apiUrl).then(displayForecast);
 }
 
 function displayWeather(response) {
@@ -130,8 +132,6 @@ function displayCelsiusTemperature(event) {
 }
 
 let celsiusTemperature = null;
-
-displayForecast();
 
 let searchForm = document.querySelector("#search-form");
 searchForm.addEventListener("submit", handleSubmit);
