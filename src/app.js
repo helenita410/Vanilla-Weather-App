@@ -39,24 +39,24 @@ let month = months[now.getMonth()];
 p.innerHTML = `Last updated ${day} ${date} ${month} ${year} ${hours}:${minutes}`;
 
 function displayForecast(response) {
+  let forecast = response.data.daily;
   let forecastElement = document.querySelector("#forecast");
   let forecastHTML = `<div class ="row w-100">`;
-  let days = ["Mon", "Tues", "Wed", "Thurs"];
-  days.forEach(function (day) {
+  days.forEach(function (forecastDay) {
     forecastHTML =
       forecastHTML +
       `<div class="col-2">
-              <div class="weather-forecast-date">${day}</div>
+              <div class="weather-forecast-date">${forecastDay.dt}</div>
 
               <img
-                src="https://openweathermap.org/img/wn/50d@2x.png"
+                src="https://openweathermap.org/img/wn/${forecastDay.weather[0].icon}@2x.png"
                 alt=""
                 width="42"
               />
 
               <div class="weather-forecast-temperature"></div>
-              <span class="weather-forecast-max">18°</span>
-              <span class="weather-forecast-min">12°</span>
+              <span class="weather-forecast-max">${forecastDay.temp.max}°</span>
+              <span class="weather-forecast-min">${forecastDay.temp.min}°</span>
             </div>
           `;
   });
