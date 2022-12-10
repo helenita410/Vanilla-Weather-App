@@ -41,7 +41,6 @@ p.innerHTML = `Last updated ${day} ${date} ${month} ${year} ${hours}:${minutes}`
 function displayForecast() {
   let forecastElement = document.querySelector("#forecast");
   let forecastHTML = "";
-  forecastElement.innerHTML = forecastHTML;
   forecastHTML = `<div class ="row"> 
   <div class="col-2">
               <div class="weather-forecast-date">Monday</div>
@@ -57,6 +56,7 @@ function displayForecast() {
               <span class="weather-forecast-min">12°</span>
             </div>
           </div>`;
+  forecastElement.innerHTML = forecastHTML;
 }
 
 function displayWeather(response) {
