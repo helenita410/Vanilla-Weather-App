@@ -59,7 +59,7 @@ function displayForecast() {
           </div>`;
   forecastHTML =
     forecastHTML +
-    `<div class ="row"> 
+    `
   <div class="col-2">
               <div class="weather-forecast-date">Monday</div>
 
@@ -74,7 +74,7 @@ function displayForecast() {
               <span class="weather-forecast-min">12°</span>
             </div>
           </div>`;
-  forecastHTML = `</div>`;
+  forecastHTML = forecastHTML + `</div>`;
   forecastElement.innerHTML = forecastHTML;
 }
 
