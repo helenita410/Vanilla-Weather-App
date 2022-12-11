@@ -35,7 +35,7 @@ ul {
 footer {
   text-align: center;
   font-weight: bolder;
-  padding: 30px, 0, 30px, 0;
+  padding: 30px;
 }
 .units .active {
   color: #2772db;
