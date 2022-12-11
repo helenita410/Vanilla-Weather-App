@@ -51,6 +51,7 @@ footer {
 }
 .col-2 {
   font-weight: bolder;
+  text-align: center;
 }
 .weather-forecast-date {
   color: #2772db;
