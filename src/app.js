@@ -74,8 +74,12 @@ function displayForecast(response) {
               />
 
               <div class="weather-forecast-temperature"></div>
-              <span class="weather-forecast-max">${forecastDay.temp.max}°</span>
-              <span class="weather-forecast-min">${forecastDay.temp.min}°</span>
+              <span class="weather-forecast-max">${Math.round(
+                forecastDay.temp.max
+              )}°</span>
+              <span class="weather-forecast-min">${Math.round(
+                forecastDay.temp.min
+              )}°</span>
             </div>
           `;
   });
@@ -103,7 +107,7 @@ function displayWeather(response) {
   cityElement.innerHTML = response.data.name;
   descriptionElement.innerHTML = response.data.weather[0].main;
   humidityElement.innerHTML = response.data.main.humidity;
-  windElement.innerHTML = response.data.wind.speed;
+  windElement.innerHTML = Math.round(response.data.wind.speed);
   iconElement.setAttribute(
     "src",
     `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
