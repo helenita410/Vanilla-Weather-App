@@ -50,11 +50,7 @@ footer {
   max-width: 900px;
   padding: 40px;
   margin-top: 30px;
-  background: radial-gradient(
-    circle at 12.3% 19.3%,
-    rgb(85, 88, 218) 0%,
-    rgb(95, 209, 249) 100.2%
-  );
+  background: linear-gradient(-225deg, #5d9fff 0%, #b8dcff 48%, #6bbbff 100%);
 }
 .col-2 {
   font-weight: bolder;
