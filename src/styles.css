@@ -56,6 +56,7 @@ footer {
 .weather-forecast-date {
   color: #2772db;
   opacity: 0.6;
+  text-align: center;
 }
 .weather-forecast-max {
   color: #3e4a61;
