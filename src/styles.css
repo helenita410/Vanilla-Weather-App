@@ -36,15 +36,12 @@ footer {
   text-align: center;
   font-weight: bolder;
 }
-.units .active {
+.units {
   color: #2772db;
   font-weight: bolder;
   text-decoration: none;
 }
 
-.units .active:hover {
-  text-decoration: none;
-}
 .container {
   max-width: 900px;
   padding: 40px;
