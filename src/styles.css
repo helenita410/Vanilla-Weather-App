@@ -49,7 +49,7 @@ footer {
 .container {
   max-width: 900px;
   padding: 40px;
-  margin: 30px;
+  margin-top: 30px;
   background: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
 }
 .col-2 {
