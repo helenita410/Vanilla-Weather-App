@@ -48,7 +48,7 @@ function formatDay(timestamp) {
     "Wednesday",
     "Thursday",
     "Friday",
-    "Sat",
+    "Saturday",
   ];
   return days[day];
 }
