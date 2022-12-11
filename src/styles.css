@@ -39,7 +39,6 @@ footer {
 .units .active {
   color: #2772db;
   font-weight: bolder;
-  cursor: default;
   text-decoration: none;
 }
 
@@ -78,5 +77,5 @@ footer {
 }
 .coder {
   font-size: 15px;
-  text-align: left;
+  text-align: center;
 }
